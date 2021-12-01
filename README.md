@@ -9,6 +9,8 @@ Each day a new set of challenges is released - there are two challenges, and if 
 For completing a challenge you receive a star :) 
 There are 50 starts you can get to save the Christmass so good luck:)
 
+If you want some extra motivation to see the challenge through, join my leaderboard for friends - key: 1564758-249e03de
+
 
 # Objective
 My main objective for participating in this challenge is to get more faimiliar with Leet-Code style questions and to brush up on my coding skills as well as problem solving ones!
