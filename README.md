@@ -1,6 +1,6 @@
 # Advent-Code
 
-![alt text](https://github.com/Pompey21/Advent-Code/blob/master/Advent Code.png?raw=true)
+![alt text](https://github.com/Pompey21/Advent-Code/blob/master/Advent_Code.png?raw=true)
 
 Hi! Welcome to my repository of solving daily challenges for this year's Advent Code!
 If you would like to join the challenge, visit this link: https://adventofcode.com/
