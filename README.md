@@ -1,6 +1,6 @@
 # Advent-Code
 
-![Alt text](file:///Users/admin/Desktop/Advent-Code/Advent%20Code.png?raw=true "Title")
+![alt text](https://github.com/Pompey21/Advent-Code/blob/master/Advent Code.png?raw=true)
 
 Hi! Welcome to my repository of solving daily challenges for this year's Advent Code!
 If you would like to join the challenge, visit this link: https://adventofcode.com/
