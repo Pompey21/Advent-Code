@@ -1,3 +1,8 @@
+"""
+Hello, hello! This is the second puzzle of Day 1!
+Day 1: https://adventofcode.com/2021/day/1
+"""
+
 with open('input.txt') as f:
     lines = f.readlines()
 
