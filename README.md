@@ -1,4 +1,4 @@
-# Advent-Code
+# Advent-of-Code
 
 ![alt text](https://github.com/Pompey21/Advent-Code/blob/master/Advent_Code.png?raw=true)
 
