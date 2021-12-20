@@ -10,6 +10,7 @@ Day 7: https://adventofcode.com/2021/day/7
 	video: https://www.youtube.com/watch?v=v-1EGgaTFuw 
 """
 import statistics
+import numpy as np
 
 with open('input.txt') as f:
 	lines = [int(elem) for elem in f.readlines()[0].split(',')]
@@ -23,15 +24,17 @@ for elem in lines:
 		dict_nums[elem] = dict_nums.get(elem)+1
 
 mode = max(dict_nums, key=dict_nums.get)
-print(mode)
+print(f'Mode: {mode}')
 
 mean = round(sum(lines)/len(lines))
-print(mean)
+print(f'Mean: {mean}')
 
 median = int(statistics.median(lines))
-print(median)
+print(f'Median: {median}')
 
 # Task 1:
+print('TASK 1:')
+
 result = sum([abs(elem-median) for elem in lines])
 print(result)
 
@@ -40,8 +43,17 @@ def spending(difference):
 	result = (n*(n+1))/2
 	return result
 
+
+
 # Task 2:
-result2 = int(sum([spending(abs(elem-mean)) for elem in lines]))
-print(result2)
+print('TASK 2:')
+
+result2 = int(sum([spending(abs(elem-round(np.mean(lines)))) for elem in lines]))
+print(f'Floor: {result2}')
+
+# round(numpy.mean(numbers))
+
+result3 = int(sum([spending(abs(elem-int(np.mean(lines)))) for elem in lines]))
+print(f'Ceiling: {result3}')
 
 
