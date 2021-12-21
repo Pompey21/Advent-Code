@@ -49,8 +49,8 @@ def decoder(line_of_input):
 		elif len(elem) == 5 and len(set([char for char in elem]) & numbers[7]) == 3:
 			numbers[3] = set([char for char in elem])
 
-	print()
-	print(numbers)
+	# print()
+	# print(numbers)
 
 	components['a'] = set(numbers[7]) - set(numbers[1])
 	components['c'] = set(numbers[8]) - set(numbers[6])
@@ -60,8 +60,8 @@ def decoder(line_of_input):
 	components['b'] = set(numbers[4]) - (set(numbers[7]) | components.get('d'))
 	components['e'] = set(numbers[8]) - (set(numbers[4]) | set(numbers[3]))
 
-	print()
-	print(components)
+	# print()
+	# print(components)
 
 	# translating the result
 	last4 = line_of_input[-4:]
@@ -96,17 +96,18 @@ def list2number(lst_chars,components_dict):
 
 
 
-with open('test_input.txt') as f:
+with open('input.txt') as f:
 	# task 1:
 	# lines_result = [elem.split('|')[1][:-1].split(' ') for elem in f.readlines()]
 	# task 2:
 	lines = [elem[:-1].split(' ') for elem in f.readlines()]
-	inputt = [item for sublist in lines for item in sublist if item != '']
-	print(inputt)
-	print(inputt[-4:])
+	inputt = [decoder(line_of_input) for line_of_input in lines]
+	# print(lines)
 
-	result = decoder(inputt)
+	result = sum(inputt)
 	print(result)
+	# result = decoder(inputt)
+	# print(result)
 
 
 
